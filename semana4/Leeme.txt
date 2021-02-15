@@ -1,0 +1,19 @@
+INTEGRANTES:
+-Huarancca Rivas, Erick
+-Roman Aguilar,Thom Maurick
+-Centeno Macalupu, Angela
+-Silvera Iñigo, Nathan Josue
+-Gomez Flores, Elias
+
+APLICACION:
+Al compilar el programa nos arroja 4 puntos elegidos desde la consola
+el cual nos arroja la grafica de del algoritmo de Casteljaus haciendo
+el uso del diagrama de una curva de Bézier, donde se tiene al inicio 
+4 puntos que unidas consecutivamente nos da 3 rectas para asi de 
+esas 3 rectas formas 2 rectas usando el algoritmo de Casteljaus 
+formando polilineas hasta llegas a la linea final con el cual arrojara
+el valor de u mediante vaya ejecuatando la aplicacion mostrando el valor 
+que varia entre 0 y 1 dependiendo de la posicion como por ejemplo si 
+u=0.1 esta avanzando un 10% de la grafica total.
+
+Ojo:El movimiento se dara haciendo uso del teclado.

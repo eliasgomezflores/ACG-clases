@@ -1,0 +1,32 @@
+Funcion bezier(i por valor como entero,r por valor como entero,t por valor como entero,eje por valor como real)
+	Si eje = 'x' Entonces
+		Si r = 0 Entonces
+			Retorna ((1-t)*bezier(i,r-1,t,'x'))+(t*bezier(i+1,r-1,t,'x'))
+		FinSi
+	FinSi
+	Si eje = 'y' Entonces
+		Si r = 0 Entonces
+			Retorna yArr[i]
+		FinSi
+		Retorna ((1-t)*bezier(i,r-1,t,'y'))+(t*bezier(i+1,r-1,t,'y'))
+	FinSi
+FinFuncion
+Algoritmo CastelJau
+	definir n Como Entero;
+	Definir xArr como entero;
+	Definir yArr Como Entero;
+	Definir i como entero;
+	Definir t como entero;
+	Dimension xArr[n];
+	Dimension yArr[n];
+	Leer n;
+	Para i = 0 hasta n-1 con paso 1 Hacer
+		Leer xArr[i];
+		leer yArr[i];
+	FinPara
+	Para t = 0 hasta 1 con paso 0.1 Hacer
+		xArr = bezier(0,n,t,'x')
+		yArr = bezier(0,n,t,'y')
+		pintar(xArr,yArr)
+	FinPara
+FinAlgoritmo
